@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artikel TI - TechNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { background-color: #f8f9fa; }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+    .navbar { background-color: #0d6efd !important; }
+    .main-content {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      padding: 30px;
+    }
+    .footer {
+      background-color: white;
+      padding: 15px 0;
+      margin-top: 20px;
+      border-top: 1px solid #dee2e6;
+    }
+    .article-card {
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .article-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .badge-category {
+      background-color: #0d6efd;
+      color: white;
+    }
+    .article-meta {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
+      <div class="logo-container">
+        <div class="logo">
+            <img src="/pages/assets/images/logo1.png" alt="Logo" class="img-fluid" />
+        </div>
+        <h1 class="h4 mb-0">TechNova</h1>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div data-include="/navbar.html"></div>
+
+    <div class="row">
+      <!-- SIDEBAR -->
+      <div class="col-lg-3 mb-4">
+        <div data-include="/sidebar.html"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="col-lg-9">
+        <div class="main-content">
+          <h2 class="mb-4">Artikel Teknologi Informasi</h2>
+          <p class="lead mb-5">Temukan wawasan terbaru seputar perkembangan teknologi informasi dan solusi digital.</p>
+          
+          <div class="row">
+            <!-- Artikel 1 -->
+            <div class="col-md-6">
+              <div class="card article-card h-100">
+                <img src="https://via.placeholder.com/600x400?text=AI" class="card-img-top article-img" alt="Kecerdasan Buatan">
+                <div class="card-body">
+                  <span class="badge badge-category mb-2">Kecerdasan Buatan</span>
+                  <h4 class="card-title">Revolusi AI dalam Bisnis Modern</h4>
+                  <p class="card-text">Bagaimana kecerdasan buatan mengubah landscape bisnis di era digital dan apa yang perlu dipersiapkan...</p>
+                  <div class="article-meta">
+                    <i class="far fa-calendar-alt me-1"></i> 15 Agustus 2023 | 
+                    <i class="far fa-user me-1 ms-2"></i> Bagas Saputra
+                  </div>
+                  <a href="#" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Artikel 2 -->
+            <div class="col-md-6">
+              <div class="card article-card h-100">
+                <img src="https://via.placeholder.com/600x400?text=Cloud" class="card-img-top article-img" alt="Cloud Computing">
+                <div class="card-body">
+                  <span class="badge badge-category mb-2">Cloud Computing</span>
+                  <h4 class="card-title">Strategi Migrasi ke Cloud yang Efektif</h4>
+                  <p class="card-text">Panduan lengkap untuk memigrasikan infrastruktur IT perusahaan ke cloud dengan risiko minimal...</p>
+                  <div class="article-meta">
+                    <i class="far fa-calendar-alt me-1"></i> 5 September 2023 | 
+                    <i class="far fa-user me-1 ms-2"></i> Dewi Kartika
+                  </div>
+                  <a href="#" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <!-- Artikel 3 -->
+            <div class="col-md-6">
+              <div class="card article-card h-100">
+                <img src="https://via.placeholder.com/600x400?text=Security" class="card-img-top article-img" alt="Keamanan Siber">
+                <div class="card-body">
+                  <span class="badge badge-category mb-2">Keamanan Siber</span>
+                  <h4 class="card-title">Proteksi Data di Era Serangan Ransomware</h4>
+                  <p class="card-text">Teknik terbaru untuk melindungi data perusahaan dari ancaman ransomware yang semakin canggih...</p>
+                  <div class="article-meta">
+                    <i class="far fa-calendar-alt me-1"></i> 22 September 2023 | 
+                    <i class="far fa-user me-1 ms-2"></i> Rizky Pratama
+                  </div>
+                  <a href="#" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Artikel 4 -->
+            <div class="col-md-6">
+              <div class="card article-card h-100">
+                <img src="https://via.placeholder.com/600x400?text=IoT" class="card-img-top article-img" alt="Internet of Things">
+                <div class="card-body">
+                  <span class="badge badge-category mb-2">IoT</span>
+                  <h4 class="card-title">Implementasi IoT untuk Smart City</h4>
+                  <p class="card-text">Peran Internet of Things dalam mengembangkan kota pintar dan contoh penerapannya di Indonesia...</p>
+                  <div class="article-meta">
+                    <i class="far fa-calendar-alt me-1"></i> 10 Oktober 2023 | 
+                    <i class="far fa-user me-1 ms-2"></i> Bagas Saputra
+                  </div>
+                  <a href="#" class="btn btn-primary mt-3">Baca Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pagination -->
+          <nav aria-label="Page navigation" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <p class="mb-0">© 2023 TechNova. Design by: <strong>Bagas Saputra</strong></p>
+    </footer>
+  </div>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/include.js"></script>
+</body>
+</html>

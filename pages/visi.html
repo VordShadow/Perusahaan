@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visi Misi - TechNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { background-color: #f8f9fa; }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+    .navbar { background-color: #0d6efd !important; }
+    .main-content {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      padding: 30px;
+    }
+    .footer {
+      background-color: white;
+      padding: 15px 0;
+      margin-top: 20px;
+      border-top: 1px solid #dee2e6;
+    }
+    .vision-card {
+      border-left: 5px solid #0d6efd;
+      background-color: #f8f9fa;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 0 8px 8px 0;
+    }
+    .mission-card {
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+      height: 100%;
+    }
+    .mission-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .mission-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+    .value-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    .value-icon {
+      font-size: 1.5rem;
+      color: #0d6efd;
+      margin-right: 15px;
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
+      <div class="logo-container">
+        <div class="logo">
+            <img src="/pages/assets/images/logo1.png" alt="Logo" class="img-fluid" />
+        </div>
+        <h1 class="h4 mb-0">TechNova</h1>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div data-include="/navbar.html"></div>
+
+    <div class="row">
+      <!-- SIDEBAR -->
+      <div class="col-lg-3 mb-4">
+        <div data-include="/sidebar.html"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="col-lg-9">
+        <div class="main-content">
+          <h2 class="mb-4">Visi dan Misi Perusahaan</h2>
+          
+          <!-- Visi Section -->
+          <section class="mb-5">
+            <div class="vision-card">
+              <h3 class="mb-3"><i class="fas fa-bullseye me-2"></i>Visi Kami</h3>
+              <p class="lead">
+                "Menjadi perusahaan terdepan dalam pengembangan solusi digital kreatif dan inovatif di Indonesia, 
+                yang memberikan nilai tambah bagi klien dan masyarakat luas."
+              </p>
+              <p>
+                TechNova bercita-cita untuk menjadi pelopor transformasi digital di Indonesia dengan menghadirkan solusi teknologi 
+                yang tidak hanya memenuhi kebutuhan saat ini tetapi juga mengantisipasi tantangan masa depan. Kami berkomitmen untuk 
+                terus berinovasi dan menciptakan produk digital yang berdampak positif bagi perkembangan bisnis dan masyarakat.
+              </p>
+            </div>
+          </section>
+          
+          <!-- Misi Section -->
+          <section class="mb-5">
+            <h3 class="mb-4"><i class="fas fa-tasks me-2"></i>Misi Kami</h3>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="mission-card shadow-sm">
+                  <div class="mission-icon">
+                    <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <h4>Solusi Teknologi Terkini</h4>
+                  <p>
+                    Menyediakan layanan pembuatan website dan aplikasi berbasis teknologi terkini dengan kualitas terbaik 
+                    yang dapat diandalkan untuk berbagai skala bisnis.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="mission-card shadow-sm">
+                  <div class="mission-icon">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <h4>Solusi Efisien</h4>
+                  <p>
+                    Memberikan solusi digital yang efisien, tepat waktu, dan sesuai dengan kebutuhan spesifik setiap klien 
+                    untuk mendukung pertumbuhan bisnis mereka.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="mission-card shadow-sm">
+                  <div class="mission-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h4>Pengembangan SDM</h4>
+                  <p>
+                    Meningkatkan kualitas sumber daya manusia di bidang teknologi informasi melalui program pelatihan 
+                    dan pengembangan kompetensi berkelanjutan.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="mission-card shadow-sm">
+                  <div class="mission-icon">
+                    <i class="fas fa-handshake"></i>
+                  </div>
+                  <h4>Kemitraan Jangka Panjang</h4>
+                  <p>
+                    Membangun kemitraan jangka panjang dengan klien dan mitra usaha berdasarkan kepercayaan, 
+                    transparansi, dan nilai tambah yang saling menguntungkan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Nilai Perusahaan Section -->
+          <section class="mb-5">
+            <h3 class="mb-4"><i class="fas fa-gem me-2"></i>Nilai-Nilai Perusahaan</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div>
+                    <h5>Inovasi</h5>
+                    <p>
+                      Kami selalu mencari cara baru dan kreatif untuk menyelesaikan masalah, 
+                      tidak pernah berhenti belajar dan mengembangkan solusi yang lebih baik.
+                    </p>
+                  </div>
+                </div>
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div>
+                    <h5>Integritas</h5>
+                    <p>
+                      Kami menjunjung tinggi kejujuran dan transparansi dalam setiap aspek bisnis, 
+                      menjaga kepercayaan yang diberikan klien kepada kami.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div>
+                    <h5>Kepuasan Klien</h5>
+                    <p>
+                      Kesuksesan klien adalah kesuksesan kami. Kami berkomitmen untuk memberikan 
+                      pengalaman terbaik dan solusi yang benar-benar bermanfaat.
+                    </p>
+                  </div>
+                </div>
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="fas fa-users-cog"></i>
+                  </div>
+                  <div>
+                    <h5>Kolaborasi</h5>
+                    <p>
+                      Kami percaya kerja tim yang solid dan kolaborasi dengan berbagai pihak 
+                      akan menghasilkan solusi yang lebih baik dan berdampak luas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Tujuan Section -->
+          <section>
+            <h3 class="mb-4"><i class="fas fa-flag me-2"></i>Tujuan Strategis</h3>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Pertumbuhan Berkelanjutan</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Mencapai pertumbuhan pendapatan 30% per tahun</li>
+                      <li class="list-group-item">Memperluas pasar ke 5 kota besar di Indonesia</li>
+                      <li class="list-group-item">Mengembangkan 10 produk digital baru dalam 3 tahun</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Keunggulan Teknologi</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Menerapkan AI dan machine learning dalam solusi kami</li>
+                      <li class="list-group-item">Mengadopsi framework terbaru untuk pengembangan</li>
+                      <li class="list-group-item">Meningkatkan keamanan siber semua produk</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/include.js"></script>
+</body>
+</html>

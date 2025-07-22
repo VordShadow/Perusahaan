@@ -1,0 +1,66 @@
+<div class="sidebar border rounded p-3 bg-white text-dark shadow-sm">
+  <h4 class="mb-3"><i class="fas fa-newspaper me-2"></i>Menu</h4>
+  <ul class="nav flex-column">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center text-dark hover-primary" href="#" id="artikelDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <span><i class="fas fa-laptop-code me-2"></i>Artikel</span>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="artikelDropdown">
+        <li><a class="dropdown-item text-dark hover-primary" href="/pages/menu/artikel.html"><i class="fas fa-file-alt me-2"></i>Konsep Teknologi Informasi</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark hover-primary" href="/pages/menu/event.html"><i class="fas fa-calendar-alt me-2"></i>Event</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark hover-primary" href="/pages/menu/galeri.html"><i class="fas fa-images me-2"></i>Gallery Foto</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark hover-primary" href="/pages/menu/klien.html"><i class="fas fa-users me-2"></i>Klien Kami</a>
+    </li>
+  </ul>
+
+  <div class="mt-4">
+  <button class="btn btn-primary w-100 mb-2" onclick="location.href='/pages//assets/auth/login.html'">
+    <i class="fas fa-sign-in-alt me-2"></i>Sign in
+  </button>
+</div>
+  </button>
+</div>
+</div>
+<script src="/pages/assets/js/users.js"></script>
+<script>
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+
+        const result = users.register(username, email, password);
+        
+        if (result.success) {
+            alert(result.message);
+            window.location.href = '/pages/assets/login.html';
+        } else {
+            alert(result.message);
+        }
+    });
+</script>
+
+<style>
+  .hover-primary:hover, 
+  .hover-primary:hover > span,
+  .hover-primary:hover > i {
+    color: #0d6efd !important;
+    transition: color 0.2s ease;
+  }
+  
+  .hover-text-primary:hover {
+    color: #0d6efd !important;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #0d6efd !important;
+  }
+</style>

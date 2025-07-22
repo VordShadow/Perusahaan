@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klien Kami - TechNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { background-color: #f8f9fa; }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+    .navbar { background-color: #0d6efd !important; }
+    .main-content {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      padding: 30px;
+    }
+    .footer {
+      background-color: white;
+      padding: 15px 0;
+      margin-top: 20px;
+      border-top: 1px solid #dee2e6;
+    }
+    .client-logo {
+      height: 80px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: all 0.3s;
+      padding: 15px;
+    }
+    .client-logo:hover {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+    .testimonial-card {
+      border-left: 3px solid #0d6efd;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
+      <div class="logo-container">
+        <div class="logo">
+            <img src="/pages/assets/images/logo1.png" alt="Logo" class="img-fluid" />
+        </div>
+        <h1 class="h4 mb-0">TechNova</h1>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div data-include="/navbar.html"></div>
+
+    <div class="row">
+      <!-- SIDEBAR -->
+      <div class="col-lg-3 mb-4">
+        <div data-include="/sidebar.html"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="col-lg-9">
+        <div class="main-content">
+          <h2 class="mb-4">Klien Kami</h2>
+          
+          <section class="mb-5">
+            <h4 class="mb-3">Perusahaan yang Telah Mempercayai Kami</h4>
+            <div class="row text-center">
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 1" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 2" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 3" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 4" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 5" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 6" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 7" class="client-logo">
+              </div>
+              <div class="col-6 col-md-3 mb-4">
+                <img src="/pages/assets/images/man.jpg" alt="Client 8" class="client-logo">
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h4 class="mb-3">Testimoni Klien</h4>
+            <div class="testimonial-card">
+              <p class="fst-italic">"TechNova memberikan solusi yang tepat untuk kebutuhan sistem kami. Tim profesional dan hasil kerja memuaskan."</p>
+              <p class="fw-bold">- Direktur PT. ABC Jaya</p>
+            </div>
+            <div class="testimonial-card">
+              <p class="fst-italic">"Layanan purna jual yang sangat baik. Selalu responsif ketika kami membutuhkan bantuan."</p>
+              <p class="fw-bold">- Manajer IT PT. XYZ Mandiri</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <p class="mb-0">© 2023 TechNova. Design by: <strong>Bagas Saputra</strong></p>
+    </footer>
+  </div>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - TechNova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body { background-color: #f8f9fa; }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+    .navbar { background-color: #0d6efd !important; }
+    .main-content {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      padding: 20px;
+    }
+    .footer {
+      background-color: white;
+      padding: 15px 0;
+      margin-top: 20px;
+      border-top: 1px solid #dee2e6;
+    }
+    .mission-icon {
+      font-size: 2rem;
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    .team-member {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-3">
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center py-3 mb-4 border-bottom">
+      <div class="logo-container">
+        <div class="logo">
+            <img src="/pages/assets/images/logo1.png" alt="Logo" class="img-fluid" />
+        </div>
+        <h1 class="h4 mb-0">TechNova</h1>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <div data-include="/navbar.html"></div>
+
+    <div class="row">
+      <!-- SIDEBAR -->
+      <div class="col-lg-3 mb-4">
+        <div data-include="/sidebar.html"></div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="col-lg-9">
+        <div class="main-content">
+          <h2 class="mb-4">Tentang Kami</h2>
+          
+          <section class="mb-5">
+            <h3 class="mb-3">Siapa Kami?</h3>
+            <p>TechNova adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital inovatif untuk bisnis di berbagai industri. Didirikan pada tahun 2015, kami telah membantu lebih dari 500 klien dalam transformasi digital mereka.</p>
+            <p>Kami percaya bahwa teknologi yang tepat dapat mengubah cara bisnis beroperasi dan berinteraksi dengan pelanggan mereka. Dengan tim ahli yang berdedikasi, kami berkomitmen untuk memberikan solusi yang tidak hanya berfungsi dengan baik tetapi juga memberikan nilai tambah bagi bisnis Anda.</p>
+          </section>
+          <section class="mb-5">
+            <h3 class="mb-3">Layanan Kami</h3>
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-laptop-code me-2"></i>Pengembangan Website</h5>
+                    <p class="card-text">Mulai dari website perusahaan sederhana hingga platform e-commerce kompleks dengan fitur khusus.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-mobile-alt me-2"></i>Aplikasi Mobile</h5>
+                    <p class="card-text">Pengembangan aplikasi iOS dan Android yang dirancang khusus untuk kebutuhan bisnis Anda.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-chart-line me-2"></i>Digital Marketing</h5>
+                    <p class="card-text">Strategi pemasaran digital yang komprehensif untuk meningkatkan visibilitas online bisnis Anda.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="mb-5">
+            <h3 class="mb-3">Tim Kami</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="team-member">
+                  <img src="/pages/assets/images/man.jpg" alt="CEO TechNova">
+                  <h4>Ilham Gunawan</h4>
+                  <p class="text-muted">Founder & CEO</p>
+                  <p>Memimpin strategi perusahaan dengan pengalaman 15 tahun di industri teknologi.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="team-member">
+                  <img src="/pages/assets/images/woman.jpg" alt="CTO TechNova">
+                  <h4>Dewi Kartika</h4>
+                  <p class="text-muted">Chief Technology Officer</p>
+                  <p>Ahli dalam arsitektur sistem dan pengembangan perangkat lunak skalabel.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="team-member">
+                  <img src="/pages/assets/images/man.jpg" alt="CMO TechNova">
+                  <h4>Rizky Pratama</h4>
+                  <p class="text-muted">Chief Marketing Officer</p>
+                  <p>Spesialis dalam strategi pemasaran digital dan pertumbuhan bisnis.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h3 class="mb-3">Kenapa Memilih Kami?</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="d-flex mb-3">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Pengalaman Luas</h5>
+                    <p>Lebih dari 8 tahun melayani berbagai klien dari startup hingga perusahaan besar.</p>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Tim Profesional</h5>
+                    <p>Dikelola oleh ahli bersertifikat dengan pengetahuan mendalam di bidangnya.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex mb-3">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Dukungan 24/7</h5>
+                    <p>Layanan dukungan teknis siap membantu kapan saja Anda membutuhkan.</p>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="me-3 text-primary">
+                    <i class="fas fa-check-circle fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Harga Kompetitif</h5>
+                    <p>Solusi berkualitas dengan harga yang terjangkau untuk berbagai skala bisnis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/include.js"></script>
+</body>
+</html>
